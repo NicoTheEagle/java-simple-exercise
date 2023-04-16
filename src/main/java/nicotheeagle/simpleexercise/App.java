@@ -5,6 +5,7 @@ import nicotheeagle.simpleexercise.bank.Persona;
 public class App {
 
 	public static void main(String[] args) {
+		//Esercizio1
 		Persona p1 = new Persona("Lorenzo");
 		Persona p2 = new Persona("Nicola");
 		System.out.println(p1.toString());
