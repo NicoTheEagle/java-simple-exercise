@@ -11,6 +11,7 @@ public class App {
 		
 		System.out.println("Inserire 4 caratteri tra 'G' 'C' 'A' 'T':");
 		dna = sc.nextLine();
+		sc.close();
 		System.out.println("La tua nuova stringa è: " + b.dnaToRna(dna));
 	}
 
