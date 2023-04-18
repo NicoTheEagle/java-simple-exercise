@@ -14,4 +14,14 @@ public class AppTest {
 		
 		assertEquals(expected, min);
 	}
+
+	@Test
+	public void maxTest() {
+		int[] arr = new int[] {-52, 56, 30, 29, -54, 0, -110};
+		int expected = 56;
+		
+		int max = App.max(arr);
+		
+		assertEquals(expected, max);
+	}
 }
