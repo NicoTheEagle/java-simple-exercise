@@ -27,7 +27,7 @@ public class WeaponFactory {
 	
 	public static Arma generateRandomWeapon() {
 		Random random = new Random();
-		int randomType = random.nextInt(0, GunType.values().length);
+		int randomType = random.nextInt(GunType.values().length);
 		GunType gunType = GunType.values()[randomType];
 		Arma arma = null;
 		switch (gunType) {
@@ -36,7 +36,7 @@ public class WeaponFactory {
 			case FUCILE_A_FUSIONE:
 				return null;
 			case FUCILE_A_POMPA:
-				int randomShotGun = random.nextInt(0, Arsenale.FucileAPompa.values().length);
+				int randomShotGun = random.nextInt(Arsenale.FucileAPompa.values().length);
 				arma = Arsenale.FucileAPompa.values()[randomShotGun].generate();
 				break;
 			case FUCILE_AUTOMATICO:
